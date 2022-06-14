@@ -12,23 +12,25 @@ public class Student {
 	@Override
 	public int hashCode() {
 		// 코드 작성
-		
-		
-		return super.hashCode();
+		return studentNum;
 	}
 
 	@Override
 	public boolean equals(Object obj) {
 		// 코드 작성
 		if(obj instanceof Student) {
-			Student student = (Student) obj;
-			if(student.studentNum == this.studentNum) {
-				return student.studentNum == studentNum && student.name.equals(name);
-			} else {
-				return false;
+			Student student = (Student)obj;
+			if(student.studentNum == studentNum) {
+				return true;
 			}
-		}
-		return super.equals(obj);
+		} 
+		return false;
+		
+		// 교재 풀이
+//		if(!(obj instanceof Student)) return false;
+//		Student student = (Student) obj;
+//		if(studentNum != student.studentNum) return false;
+//		return true;
 	}
 	
 	

@@ -12,6 +12,9 @@ public class HashSetExample {
 		set.add(new Student(1,"홍길동"));
 		set.add(new Student(2,"신용권"));
 		set.add(new Student(1,"조민우")); //학번이 같으므로 저장되지 않음
+		set.add(new Student(3,"이지원"));
+		set.add(new Student(1,"김수빈"));
+		set.add(new Student(2,"전태풍"));
 	
 		Iterator<Student> iterator = set.iterator();
 		while(iterator.hasNext()) {
